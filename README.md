@@ -10,12 +10,12 @@ Bu projede, bir Spring Boot REST API uygulaması geliştirilmiştir. Proje, kull
 `UserController` sınıfı, kullanıcıların oluşturulması, güncellenmesi, silinmesi ve listelenmesi gibi işlemleri yönetir ve bu işlemler için HTTP isteklerini işler. `UserService` sınıfı, iş mantığını içerir ve `UserRepository` ile etkileşimde bulunur, ayrıca kullanıcı verilerini DTO'lara dönüştürmek için `ModelMapper` kullanır. `ApiExceptionHandler` ve `ExceptionResponse` sınıfları, özelleştirilmiş hata mesajları sağlar ve olası istisnaları yönetir. `UserNotFound` istisnası, kullanıcı bulunamadığında özel bir hata fırlatır. Veritabanı yapısını belirlemek için `User` ve `BaseEntity` sınıfları kullanılır; `User` sınıfı kullanıcı verilerini temsil ederken, `BaseEntity` ortak alanları sağlar. `UserRepository` sınıfı, JPA kullanarak veri erişimi sağlar ve çeşitli arama yöntemleri sunar. Pagination işlemleri, verilerin sayfalı olarak alınmasını sağlar ve `Pageable` ve `Slice` yapılarıyla esnek bir şekilde uygulanır.
 
 # Projenin Önemli Noktaları
-Hata Yönetimi: Özel bir ExceptionResponse sınıfı oluşturularak, hata durumlarında daha anlamlı ve özelleştirilmiş yanıtlar üretilmektedir.
-DTO Kullanımı: Veritabanı ve dış dünya arasında veri transferinde DTO'lar kullanılarak, veri sızıntısı riskleri azaltılmaktadır.
-ModelMapper: DTO ve Entity nesneleri arasında otomatik eşleştirme yaparak, kod tekrarını azaltmaktadır.
-Spring Data JPA: Veritabanı işlemlerini kolaylaştıran ve soyutlayan bir katman sunmaktadır.
-Pagination: Server-side pagination ile büyük veri kümelerinin daha verimli bir şekilde yönetilmesini sağlar.
-Lombok: Getter, setter, constructor gibi boilerplate kodları otomatik olarak üreterek geliştirici üretkenliğini artırır.
+**Hata Yönetimi:** Özel bir ExceptionResponse sınıfı oluşturularak, hata durumlarında daha anlamlı ve özelleştirilmiş yanıtlar üretilmektedir.
+**DTO Kullanımı:** Veritabanı ve dış dünya arasında veri transferinde DTO'lar kullanılarak, veri sızıntısı riskleri azaltılmaktadır.
+**ModelMapper:** DTO ve Entity nesneleri arasında otomatik eşleştirme yaparak, kod tekrarını azaltmaktadır.
+**Spring Data JPA:** Veritabanı işlemlerini kolaylaştıran ve soyutlayan bir katman sunmaktadır.
+**Pagination:** Server-side pagination ile büyük veri kümelerinin daha verimli bir şekilde yönetilmesini sağlar.
+**Lombok:** Getter, setter, constructor gibi boilerplate kodları otomatik olarak üreterek geliştirici üretkenliğini artırır.
 
 
 # MAIN THEME OF PROJECT
