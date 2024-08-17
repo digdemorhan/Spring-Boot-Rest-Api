@@ -1,4 +1,4 @@
-# SpringBootRestApi
+# Spring-Boot-Rest-Api
 
 # PROJENİN ANA TEMASI
 Bu projede, bir Spring Boot REST API uygulaması geliştirilmiştir. Proje, kullanıcı yönetimini sağlayan bir servis ve API oluşturur. Kullanıcıların oluşturulması, güncellenmesi, silinmesi ve listelenmesi gibi temel CRUD işlemlerini desteklemektedir. Ayrıca, istekleri doğrulama ve hata yönetimi için kapsamlı bir mekanizma içermektedir. 
