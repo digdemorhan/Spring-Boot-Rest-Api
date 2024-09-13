@@ -5,7 +5,7 @@ Bu projede, bir Spring Boot REST API uygulaması geliştirilmiştir. Proje, kull
 # Proje Dosyaları
 ![p0987u6y](https://github.com/user-attachments/assets/c749c3c8-9dfc-4671-83d5-5214356bafde)
 
-# Proje Sınıfları
+# Proje Sınıfları 
 `UserController` sınıfı, kullanıcıların oluşturulması, güncellenmesi, silinmesi ve listelenmesi gibi işlemleri yönetir ve bu işlemler için HTTP isteklerini işler. `UserService` sınıfı, iş mantığını içerir ve `UserRepository` ile etkileşimde bulunur, ayrıca kullanıcı verilerini DTO'lara dönüştürmek için `ModelMapper` kullanır. `ApiExceptionHandler` ve `ExceptionResponse` sınıfları, özelleştirilmiş hata mesajları sağlar ve olası istisnaları yönetir. `UserNotFound` istisnası, kullanıcı bulunamadığında özel bir hata fırlatır. Veritabanı yapısını belirlemek için `User` ve `BaseEntity` sınıfları kullanılır; `User` sınıfı kullanıcı verilerini temsil ederken, `BaseEntity` ortak alanları sağlar. `UserRepository` sınıfı, JPA kullanarak veri erişimi sağlar ve çeşitli arama yöntemleri sunar. Pagination işlemleri, verilerin sayfalı olarak alınmasını sağlar ve `Pageable` ve `Slice` yapılarıyla esnek bir şekilde uygulanır.
 
 
